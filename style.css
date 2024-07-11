@@ -14,27 +14,38 @@
   justify-content: space-between;
   padding: 20px;
 
-  & > h2 {
+  .logo {
     font-size: 18px;
-    color: rgb(3, 174, 3);
+    color: rgb(52, 120, 246);
     font-weight: normal;
   }
 
-  & .navEl {
+  .navEl {
     display: flex;
     width: 300px;
     justify-content: space-between;
+    align-items: center;
 
     & h2 {
       font-size: 16px;
       font-weight: normal;
+      text-decoration: none;
+
+      & a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+          border-bottom: 1px solid black;
+        }
+      }
     }
   }
 
-  & .gallery {
+  .gallery {
     text-decoration: none;
     color: white;
-    background-color: rgb(3, 174, 3);
+    background-color: rgb(52, 120, 246);
     padding: 7px 22px;
     border-radius: 7px;
     font-size: 14px;
@@ -42,5 +53,62 @@
     &:hover {
       opacity: 85%;
     }
+  }
+}
+
+.main {
+  .left {
+    height: 500px;
+    width: 50%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+    .left__title {
+      font-size: 45px;
+    }
+
+    .par {
+      margin-top: 20px;
+    }
+
+    .left__box {
+      margin-top: 55px;
+
+      .gallery {
+        text-decoration: none;
+        color: white;
+        background-color: rgb(52, 120, 246);
+        padding: 7px 22px;
+        border-radius: 7px;
+        font-size: 14px;
+
+        &:hover {
+          opacity: 85%;
+        }
+      }
+    }
+
+    .box {
+      margin-top: 35px;
+      background-color: rgb(76, 135, 245);
+      color: white;
+      padding: 15px 8px;
+      width: 80%;
+      border-radius: 8px;
+
+      .box__title {
+        font-size: 16px;
+      }
+
+      .box__par {
+        font-size: 12px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .right {
+    width: 50%;
   }
 }
