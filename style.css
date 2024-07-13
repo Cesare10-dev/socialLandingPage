@@ -152,25 +152,35 @@
     .inside {
       max-width: 550px;
       height: 200px;
-      border: 1px solid red;
+      border: 1px solid gray;
       border-radius: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 15px;
 
-      .inside__box {
+      .inside__all {
+        gap: 20px;
         display: flex;
-
-        & img {
-          border: 1px solid red;
-          border-radius: 100%;
-          height: 40px;
-          width: 40px;
-        }
+        flex-direction: column;
 
         .inside__text {
-          padding-left: 10px;
+          font-size: 20px;
+        }
+
+        .inside__box {
+          display: flex;
+
+          & img {
+            border: 1px solid red;
+            border-radius: 100%;
+            height: 40px;
+            width: 40px;
+          }
+
+          .inside__text2 {
+            padding-left: 10px;
+          }
         }
       }
     }
