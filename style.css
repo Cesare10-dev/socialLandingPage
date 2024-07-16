@@ -199,12 +199,47 @@
 
 .questions {
   height: 500px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 35px;
+  margin-top: 45px;
 
   .questions__title {
     font-size: 55px;
+    margin-bottom: 75px;
+  }
+
+  .details[open] summary {
+    background-color: #f5f3f3ba;
+    margin-bottom: 9px;
+  }
+
+  .details {
+    width: 500px;
+    margin-bottom: 20px;
+    background-color: rgb(237, 221, 221);
+    border-radius: 14px;
+    overflow: hidden;
+
+    .summary {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-size: 24px;
+      padding: 13px;
+      transition: all 120ms ease;
+      gap: 15px;
+      background-color: rgb(218, 201, 201);
+    }
+
+    .summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .content {
+      padding: 13px;
+    }
   }
 }
