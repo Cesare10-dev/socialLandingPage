@@ -196,3 +196,15 @@
     }
   }
 }
+
+.questions {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+
+  .questions__title {
+    font-size: 55px;
+  }
+}
